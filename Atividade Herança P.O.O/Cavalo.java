@@ -11,6 +11,7 @@ public class Cavalo extends Animal
     	this.Peço = Peço;
   	    this.Altura = Altura;
     }
+   
 
 	public String getPeço() {
 		return Peço;
@@ -33,4 +34,14 @@ public class Cavalo extends Animal
 		System.out.println("\nNome do cavalo: "+getNome()+"\n"+"Idade: "+getIdade()
 		+"\n"+"Peço: "+Peço+"\n"+"Altura: "+Altura);
 	}
+	@Override
+    public void emitirSom() {
+        System.out.println("Iiirriiiiii....");
+    }
+
+    @Override
+    public void capacidade(){
+        System.out.println("potoque potoque..");
+    }
+
 }

@@ -11,6 +11,7 @@ public class Preguiça extends Animal
     	this.Espécie = Espécies;
   	    this.Dieta = Dieta;
     }
+    
 
 	public String getEspécies() {
 		return Espécie;
@@ -33,5 +34,13 @@ public class Preguiça extends Animal
 		System.out.println("\nNome da preguiça: "+getNome()+"\n"+"Idade: "+getIdade()
 		+"\n"+"espécie: "+Espécie+"\n"+"tipo de comida: "+Dieta);
 	}
-	
+	@Override
+	public void emitirSom() {
+        System.out.println("oooooooiiiiiiiiiiiiiiii.......");
+    }
+
+	@Override
+    public void capacidade(){
+        System.out.println("A preguiça sobre em árvores!");
+    }
 }

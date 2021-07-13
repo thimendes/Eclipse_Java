@@ -1,9 +1,11 @@
 package Atividades;
 
-public class Animal 
+public abstract class Animal 
+
 {
 	private String Nome;
 	private int Idade;
+	
 	
 	public Animal(String Nome,int Idade)
 	{
@@ -27,4 +29,7 @@ public class Animal
 	public void setIdade(int Idade) {
 		this.Idade = Idade;
 	}
+	public abstract void emitirSom();
+
+    public abstract void capacidade();
 }

@@ -13,7 +13,8 @@ public class Cachorro extends Animal
  	   this.Cor = Cor;
  		   
     }
-
+   
+   
 	public String getRaça() {
 		return Raça;
 	}
@@ -36,5 +37,14 @@ public class Cachorro extends Animal
 		System.out.println("\nNome do cachorro: "+getNome()+"\n"+"Idade: "+getIdade()
 		+"\n"+"Raça: "+Raça+"\n"+"Cor: "+Cor);
 	}
+	 @Override
+	    public void emitirSom() {
+	        System.out.println("Auauau....");
+	    }
+
+	 @Override
+	    public void capacidade(){
+	        System.out.println("correndo!");
+	    }
 
 }
